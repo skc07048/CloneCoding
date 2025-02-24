@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import url("./reset.css");
+body {
+  background-color: #131313;
+  color: #fff;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+/* 헤더 */
+nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo {
+  width: 36px;
+  height: 36px;
+}
+.audio_btn {
+  width: 135px;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #444;
+  border-radius: 40px;
+}
+.audio_btn .audio_grad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.audio_grad .on,
+.audio_grad .off {
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-align: center;
+  position: absolute;
+  transition: 0.3s;
+}
+.audio_grad .on {
+  top: -5px;
+  left: 0;
+}
+.audio_grad .off {
+  opacity: 0;
+  top: -5px;
+  left: 0;
+  transform: translateY(30px);
+}
+.audio_grad:hover .on {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+.audio_grad:hover .off {
+  transform: translateY(0);
+  opacity: 1;
+}
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.logo:hover {
+  animation: logo 0.5s ease-in 0s 1 forwards;
+}
+@keyframes logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 메인 영역 */
+.main_sec {
+  width: 100%;
+  height: auto;
+  padding: 18px;
+  box-sizing: border-box;
+}
+.con {
+  width: 100%;
+  height: 100svh;
+  position: relative;
+}
+.main_bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-135deg, transparent 20px, #444 0) top right,
+    linear-gradient(170deg, transparent 80px, #444 0) top left,
+    linear-gradient(-30deg, transparent 80px, #444 0) bottom right,
+    linear-gradient(45deg, transparent 20px, #444 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.main_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.corner_top,
+.corner_bottom {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.corner_top {
+  top: 0;
+  right: 0;
+}
+.corner_bottom {
+  bottom: 0;
+  left: 0;
+}
