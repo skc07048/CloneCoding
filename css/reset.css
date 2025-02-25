@@ -141,3 +141,6 @@ button {
   border: none;
   outline: none;
 }
+:root {
+  --theme-text-color: #c5b6af;
+}
