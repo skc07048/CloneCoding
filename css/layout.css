@@ -1,14 +1,7 @@
 @charset "utf-8";
 @import url("./reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap");
-html {
-  font-size: 14px;
-}
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .wrapper {
   width: 100%;
   height: auto;
@@ -28,9 +21,10 @@ nav {
   z-index: 999;
   box-sizing: border-box;
   padding: 18px;
+  padding-top: 12px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 6px;
 }
 .logo {
   width: 36px;
@@ -38,7 +32,7 @@ nav {
 }
 .audio_btn {
   width: 135px;
-  height: 100%;
+  height: fit-content;
   overflow: hidden;
   border: 1px solid #444;
   border-radius: 40px;
@@ -202,15 +196,14 @@ nav {
 }
 h1 .top,
 .bottom {
-  font-family: "Righteous", sans-serif;
-  font-size: 7vw;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 10vw;
   line-height: 0.8;
   letter-spacing: 2px;
   color: var(--theme-text-color);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .text_wrap p {
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1;
   margin-top: 20px;
@@ -340,7 +333,7 @@ h1 .top,
   font-size: 100px;
   text-transform: capitalize;
   color: var(--theme-text-color);
-  font-family: "Righteous", sans-serif;
+  font-family: "Alumni Sans", sans-serif;
 }
 /* sec3 */
 .sticky_wrap {
@@ -411,8 +404,6 @@ h1 .top,
 .theme_3,
 .theme_4,
 .theme_5 {
-  width: 500px;
-  height: 400px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -427,6 +418,7 @@ h1 .top,
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   background-color: rgba(197, 182, 175, 0.1);
+  position: relative;
 }
 .item_title {
   display: flex;
@@ -437,7 +429,7 @@ h1 .top,
 /* 테마 크기 및 위치 설정 */
 .theme_1 {
   width: 831px;
-  height: 561px;
+  height: 527px;
   top: 0;
   left: 5vw;
 }
@@ -486,7 +478,7 @@ h1 .top,
   width: 95vw;
   height: 30vh;
   position: absolute;
-  bottom: 15vh;
+  bottom: 20vh;
   left: 2vw;
   display: flex;
   flex-direction: column;
@@ -506,9 +498,9 @@ h1 .top,
 .hero_text2 {
   width: fit-content;
   height: fit-content;
-  font-family: "Righteous", sans-serif;
+  font-family: "Alumni Sans", sans-serif;
   color: var(--theme-text-color);
-  font-size: 10vw;
+  font-size: 14vw;
   line-height: 0.8;
   text-transform: uppercase;
 }
@@ -617,16 +609,17 @@ h1 .top,
     0 80%
   );
 }
-/* .slide_list_wrap .list:nth-of-type(5n + 2),
-.slide_list_wrap .list:nth-of-type(5n + 5) {
-  transform: translateY(70%);
+
+.slide_list_wrap .list:nth-of-type(2n) {
+  transform: translateY(-50%);
 }
-.slide_list_wrap .list:nth-of-type(5n + 3) {
-  transform: translateY(-40%);
+.slide_list_wrap .list:nth-of-type(3n) {
+  transform: translateY(40%);
 }
-.slide_list_wrap .list:nth-of-type(5n + 4) {
-  transform: translateY(20%);
-} */
+.slide_list_wrap .list:nth-of-type(4n) {
+  transform: translateY(-30%);
+}
+
 .bottom_wrap {
   width: 100%;
   height: fit-content;
@@ -711,7 +704,7 @@ footer {
   background-color: #131313;
   width: 100%;
   height: 100vh;
-  position: relative;
+  padding-top: 50px;
 }
 .footer_con {
   width: 100%;
@@ -721,16 +714,26 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+.footer_inner_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
 }
 /* 푸터 텍스트 */
-.footer_con h2 {
-  font-size: 32vw;
-  font-family: "Righteous", sans-serif;
+.footer_inner_wrap > h2 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 36vw;
+  letter-spacing: 80px;
+  font-family: "Alumni Sans", sans-serif;
   color: var(--theme-text-color);
   margin: 0 auto;
 }
-.footer_con .footer_layout {
-  width: 90%;
+.footer_layout {
+  width: 95%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -756,16 +759,20 @@ footer {
   width: 100%;
   height: 17px;
   transition: opacity 0.3s;
+  background-color: unset;
 }
 .footer_btn button:hover {
   opacity: 0.8;
 }
+
 .one #btn {
   width: 13rem;
   height: 4rem;
   position: relative;
   padding: 0.2rem 0.4rem;
   box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
 }
 .footer_btn .btn_inner {
   width: 100%;
@@ -828,22 +835,25 @@ footer {
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  opacity: 0.5;
+  color: #4f009e;
 }
 .footer_base .base_wrap {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
-  z-index: 0;
-  background-image: linear-gradient(#4f009e, rgba(79, 0, 158, 0));
 }
-.footer_base .base_wrap img {
+.base_wrap .base_top {
+  width: 100%;
+  height: 200px;
   overflow: hidden;
-  mask-image: url("../img/icon&svg/footer.svg");
 }
 .footer_base .footer_grad {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(#4f009e, rgba(79, 0, 158, 0));
+  position: relative;
+  top: -2px;
+  z-index: -1;
 }

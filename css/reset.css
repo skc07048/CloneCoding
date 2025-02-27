@@ -153,3 +153,97 @@ button {
   top: 0;
   left: 0;
 }
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter", "Alumni Sans" sans-serif;
+  cursor: none;
+}
+/* custom cursor */
+.cursor_wrap {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 200;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  pointer-events: none;
+}
+.cursor_move {
+  width: 100%;
+  height: 100%;
+}
+.cursor {
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  transition: all 0.4s;
+  display: flex;
+  position: relative;
+  left: -1.2rem;
+  top: -6.2rem;
+}
+.cursor_top {
+  background-color: var(--theme-text-color);
+  width: 1px;
+  height: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.cursor_bottom {
+  background-color: var(--theme-text-color);
+  width: 1px;
+  height: 0.5rem;
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: 0;
+}
+.cursor_left {
+  background-color: var(--theme-text-color);
+  width: 0.5rem;
+  height: 1px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: auto;
+  bottom: auto;
+}
+.cursor_right {
+  background-color: var(--theme-text-color);
+  width: 0.5rem;
+  height: 1px;
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: auto;
+}
+.cursor_dot {
+  aspect-ratio: 1;
+  border: 1px solid var(--theme-text-color);
+  border-radius: 100vw;
+  background-color: rgba(197, 182, 175, 0.05);
+  width: 0.125rem;
+}

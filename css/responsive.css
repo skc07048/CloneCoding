@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 모바일 작은 사이즈 */
+@media screen and (max-width: 480px) {
+}
+
+/* 모바일 큰사이즈 */
+@media screen and (max-width: 481px) and (max-width: 768px) {
+}
+
+/* 태블릿 sm / md */
+@media screen and (max-width: 769px) and (max-width: 1024px) {
+}
+
+/* 노트북 md / 태블릿 lg */
+@media screen and (max-width: 1025px) and (max-width: 1440px) {
+}
+
+/* 노트북  lg*/
+@media screen and (max-width: 1441px) and (max-width: 1600px) {
+}

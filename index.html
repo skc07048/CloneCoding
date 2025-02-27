@@ -7,10 +7,21 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/layout.css" />
     <!-- responsive -->
-    <!-- gsap -->
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <div class="wrapper">
+      <div class="cursor_wrap">
+        <div class="cursor_move">
+          <div class="cursor">
+            <div class="cursor_top"></div>
+            <div class="cursor_left"></div>
+            <div class="cursor_right"></div>
+            <div class="cursor_bottom"></div>
+            <div class="cursor_dot"></div>
+          </div>
+        </div>
+      </div>
       <!-- 헤더 -->
       <nav>
         <!-- 오디오 버튼 -->
@@ -145,7 +156,7 @@
             <!-- 테마 영역 -->
             <div class="container">
               <div class="theme_1">
-                <div class="inner_box">
+                <div class="inner_box inner1">
                   <img src="./img/sec3/theme1.webp" alt="theme1" />
                 </div>
                 <div class="item_title">
@@ -154,7 +165,7 @@
                 </div>
               </div>
               <div class="theme_2">
-                <div class="inner_box">
+                <div class="inner_box inner2">
                   <img src="./img/sec3/theme2.webp" alt="theme2" />
                 </div>
                 <div class="item_title">
@@ -163,7 +174,7 @@
                 </div>
               </div>
               <div class="theme_3">
-                <div class="inner_box">
+                <div class="inner_box inner3">
                   <img src="./img/sec3/theme3.webp" alt="theme3" />
                 </div>
                 <div class="item_title">
@@ -172,7 +183,7 @@
                 </div>
               </div>
               <div class="theme_4">
-                <div class="inner_box">
+                <div class="inner_box inner4">
                   <img src="./img/sec3/theme4.webp " alt="" />
                 </div>
                 <div class="item_title">
@@ -181,7 +192,7 @@
                 </div>
               </div>
               <div class="theme_5">
-                <div class="inner_box">
+                <div class="inner_box inner5">
                   <img src="./img/sec3/theme5.webp" alt="theme5" />
                 </div>
                 <div class="item_title">
@@ -714,67 +725,111 @@
       <!-- footer -->
       <footer>
         <div class="footer_con">
-          <h2>UNITE</h2>
-          <div class="footer_layout">
-            <div class="one">
-              <div class="bullet">
-                <img src="./img/icon&svg/bullet.svg" alt="bullet" />
+          <div class="footer_inner_wrap">
+            <h2>UNITE</h2>
+            <div class="footer_layout">
+              <div class="one">
+                <div class="bullet">
+                  <img src="./img/icon&svg/bullet.svg" alt="bullet" />
+                </div>
+                <div class="footer_btn">
+                  <button type="button" id="btn">
+                    <img
+                      src="./img/icon&svg/btnFrame.svg"
+                      alt="btnFrame"
+                      class="btn_frame"
+                    />
+                    <div class="btn_inner">
+                      <div class="btn_inner_text">Submit creation</div>
+                      <div class="btn_inner_base"></div>
+                    </div>
+                  </button>
+                </div>
               </div>
-              <div class="footer_btn">
-                <button type="button" id="btn">
-                  <img
-                    src="./img/icon&svg/btnFrame.svg"
-                    alt="btnFrame"
-                    class="btn_frame"
-                  />
-                  <div class="btn_inner">
-                    <div class="btn_inner_text">Submit creation</div>
-                    <div class="btn_inner_base"></div>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="two">
-              <p>
-                Join the NeoCultural Couture community, where the future of
-                fashion is being reimagined every day. Together, let's dress the
-                future in the colours of our past.
-              </p>
-            </div>
-            <div class="three">
-              <div class="time_title">local time:</div>
-              <div class="time">오후 5:21:57</div>
-            </div>
-            <div class="four">
-              <div class="t">
-                <p>credits:</p>
-                <p>site by Jordan Gilroy</p>
-              </div>
-              <div class="b">
+              <div class="two">
                 <p>
-                  Awwwards masterclass by<br />
-                  niccolo miranda
+                  Join the NeoCultural Couture community, where the future of
+                  fashion is being reimagined every day. Together, let's dress
+                  the future in the colours of our past.
                 </p>
               </div>
-            </div>
-            <div class="five">
-              <div class="t">legal:</div>
-              <div class="b">© 2025</div>
+              <div class="three">
+                <div class="time_title">local time:</div>
+                <div class="time">오후 5:21:57</div>
+              </div>
+              <div class="four">
+                <div class="t">
+                  <p>credits:</p>
+                  <p>site by Jordan Gilroy</p>
+                </div>
+                <div class="b">
+                  <p>
+                    Awwwards masterclass by<br />
+                    niccolo miranda
+                  </p>
+                </div>
+              </div>
+              <div class="five">
+                <div class="t">legal:</div>
+                <div class="b">© 2025</div>
+              </div>
             </div>
           </div>
           <div class="footer_base">
             <div class="base_wrap">
-              <img
-                src="./img/icon&svg/footer.svg"
-                alt="footer"
-                style="width: 4350px; height: 200px"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4350"
+                viewBox="0 0 4350 200"
+                fill="none"
+                class="footer_top"
+              >
+                <path
+                  d="M0 0H50V50H100V100H250V50H350V100H450V1H500V51H550V100H600V150H700V100H750V50H900V100H950V150H1050V100H1100V150H1150V200H0V0Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M1450 0H1500V50H1550V100H1700V50H1800V100H1900V1H1950V51H2000V100H2050V150H2150V100H2200V50H2350V100H2400V150H2500V100H2550V150H2600V200H1400V100H1450V0Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M2950 0H2900V100H2850V200H4050V150H4000V100H3950V150H3850V100H3800V50H3650V100H3600V150H3500V100H3450V51H3400V1H3350V100H3250V50H3150V100H3000V50H2950V0Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M1300 150H1350V200H1300V150Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M2800 150H2750V200H2800V150Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M4200 150H4250V200H4200V150Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M4300 200H4350V100H4300V200Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
               <div class="footer_grad"></div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/hover/gsap.min.js"></script>
+    <!-- three.js -->
+    <script src="./js/hover/three.min.js"></script>
     <!-- JS -->
+    <script src="./js/hover/hover-effect.umd.js"></script>
+    <script src="./js/hover/theme-hover.js"></script>
+    <!-- custom cursor -->
+    <script src="./js/cursor.js"></script>
   </body>
 </html>
