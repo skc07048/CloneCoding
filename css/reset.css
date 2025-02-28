@@ -136,12 +136,14 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: none;
 }
 button {
   background-color: #131313;
   color: #fff;
   border: none;
   outline: none;
+  cursor: none;
 }
 :root {
   --theme-text-color: #c5b6af;
@@ -162,6 +164,11 @@ canvas {
   height: 100%;
   padding: 1rem;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: block;
+  cursor: none;
 }
 html {
   font-size: 14px;
@@ -246,4 +253,31 @@ body {
   border-radius: 100vw;
   background-color: rgba(197, 182, 175, 0.05);
   width: 0.125rem;
+}
+/* cursor hover */
+.cursor.hover {
+  width: 4rem;
+  left: -2rem;
+  top: -7rem;
+}
+.cursor_top.hover {
+  height: 0.125rem;
+  background-color: #ebfb1d;
+}
+.cursor_bottom.hover {
+  height: 0.125rem;
+  background-color: #ebfb1d;
+}
+.cursor_left.hover {
+  width: 0.125rem;
+  background-color: #ebfb1d;
+}
+.cursor_right.hover {
+  width: 0.125rem;
+  background-color: #ebfb1d;
+}
+.cursor_dot.hover {
+  width: 3.5rem;
+  border-color: #ebfb1d;
+  background-color: rgba(235, 251, 29, 0.2);
 }
