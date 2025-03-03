@@ -190,6 +190,9 @@ body {
   left: 0%;
   right: 0%;
   pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cursor_move {
   width: 100%;
@@ -204,7 +207,7 @@ body {
   display: flex;
   position: relative;
   left: -1.2rem;
-  top: -6.2rem;
+  top: -10.2rem;
 }
 .cursor_top {
   background-color: var(--theme-text-color);
@@ -258,7 +261,7 @@ body {
 .cursor.hover {
   width: 4rem;
   left: -2rem;
-  top: -7rem;
+  top: -10rem;
 }
 .cursor_top.hover {
   height: 0.125rem;

@@ -220,6 +220,9 @@ h1 .top,
   text-transform: uppercase;
 }
 /* sec2 */
+.theme_wrap {
+  height: 130vh;
+}
 .theme_wrap .con {
   width: 100%;
   height: 100svh;
@@ -325,6 +328,9 @@ h1 .top,
   text-transform: capitalize;
   color: var(--theme-text-color);
   font-family: "Alumni Sans", sans-serif;
+}
+.intro_title > span {
+  opacity: 0;
 }
 /* sec3 */
 .sticky_wrap {
@@ -545,6 +551,7 @@ h1 .top,
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 100px;
   padding: 300px 0;
 }
 .slide_con .slide_list_wrap {
@@ -556,6 +563,7 @@ h1 .top,
   display: flex;
   gap: 20px;
 }
+
 .slide_list_wrap .list > .list_text {
   align-self: flex-end;
 }
@@ -704,7 +712,7 @@ footer {
 .footer_con {
   width: 100%;
   height: 100%;
-  padding: 215px 36px 72px;
+  padding: 120px 36px 72px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
