@@ -176,7 +176,7 @@ html {
 body {
   background-color: #000;
   color: #fff;
-  font-family: "Inter", "Alumni Sans" sans-serif;
+  font-family: "Inter", "Audiowide" sans-serif;
   cursor: none;
 }
 /* custom cursor */
@@ -197,6 +197,9 @@ body {
 .cursor_move {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .cursor {
   aspect-ratio: 1;
@@ -207,7 +210,7 @@ body {
   display: flex;
   position: relative;
   left: -1.2rem;
-  top: -10.2rem;
+  top: -6.2rem;
 }
 .cursor_top {
   background-color: var(--theme-text-color);
@@ -261,7 +264,7 @@ body {
 .cursor.hover {
   width: 4rem;
   left: -2rem;
-  top: -10rem;
+  top: -7rem;
 }
 .cursor_top.hover {
   height: 0.125rem;

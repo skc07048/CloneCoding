@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .timeline({
       scrollTrigger: {
         trigger: ".hero_text1",
-        start: "top 80%",
+        start: "top 60%",
         end: "bottom top",
         scrub: 2,
       },
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .timeline({
       scrollTrigger: {
         trigger: ".hero_text2",
-        start: "top 80%",
+        start: "top 59%",
         end: "bottom top",
         scrub: 2,
       },

@@ -1,21 +1,453 @@
 @charset "utf-8";
 
-/* 모바일 작은 사이즈 */
-@media screen and (max-width: 480px) {
-}
+/* 노트북  lg*/
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+  /* sec3 */
+  /* 테마 크기 및 위치 설정 */
+  .theme_1 {
+    width: 731px;
+    height: 427px;
+  }
+  .theme_2 {
+    width: 579px;
+    height: 359px;
+  }
+  .theme_3 {
+    width: 426px;
+    height: 257px;
+  }
+  .theme_4 {
+    width: 426px;
+    height: 257px;
+  }
+  .theme_5 {
+    width: 731px;
+    height: 461px;
+  }
 
-/* 모바일 큰사이즈 */
-@media screen and (max-width: 481px) and (max-width: 768px) {
-}
-
-/* 태블릿 sm / md */
-@media screen and (max-width: 769px) and (max-width: 1024px) {
+  /* sec4,footer */
+  .btn_inner .btn_inner_base {
+    transform: translateX(-15vw);
+  }
 }
 
 /* 노트북 md / 태블릿 lg */
-@media screen and (max-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* sec2 */
+  .theme_wrap {
+    height: 100vh;
+  }
+  /* sec3 */
+  .sticky_wrap {
+    height: 400vh;
+  }
+  .sticky_wrap .con {
+    height: 320vh;
+  }
+  .sticky_element .sticky_text h2 {
+    font-size: 0.8rem;
+  }
+  .sticky_element .sticky_text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .sticky_element .sticky_shape {
+    width: 400px;
+    height: 400px;
+  }
+  /* 테마 크기 및 위치 설정 */
+  .theme_1 {
+    width: 580px;
+    height: 427px;
+  }
+  .theme_2 {
+    width: 479px;
+    height: auto;
+  }
+  .theme_3 {
+    width: 326px;
+    height: 257px;
+  }
+  .theme_4 {
+    width: 326px;
+    height: 257px;
+  }
+  .theme_5 {
+    width: 580px;
+    height: 461px;
+  }
+  /* sec4 */
+  .hero_theme .hero_con {
+    height: 65vh;
+  }
+  /* 타이틀 영역 */
+  .hero_con .hero_title_wrap {
+    height: 15vh;
+  }
+  /* sec4,footer */
+  .btn_inner .btn_inner_base {
+    transform: translateX(-20vw);
+  }
 }
 
-/* 노트북  lg*/
-@media screen and (max-width: 1441px) and (max-width: 1600px) {
+/* 태블릿 sm / md */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* main */
+  .main_sec .con {
+    height: 80svh;
+  }
+  /* sec2 */
+  .theme_wrap {
+    height: 90vh;
+  }
+  .theme_wrap .con {
+    padding: 7rem 3rem;
+    box-sizing: border-box;
+    margin-bottom: 200px;
+  }
+  /* sec3 */
+  .sticky_wrap {
+    height: 400vh;
+  }
+  .sticky_wrap .con {
+    height: 320vh;
+  }
+  .sticky_element .sticky_text h2 {
+    font-size: 0.8rem;
+  }
+  .sticky_element .sticky_text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .sticky_element .sticky_shape {
+    width: 400px;
+    height: 400px;
+  }
+  /* 테마 크기 및 위치 설정 */
+  .theme_1 {
+    width: 60vw;
+    height: 35vh;
+  }
+  .theme_2 {
+    width: 60vw;
+    height: 35vh;
+    top: 55vh;
+  }
+  .theme_3 {
+    width: 60vw;
+    height: 35vh;
+    left: 5vw;
+    top: 110vh;
+  }
+  .theme_4 {
+    width: 60vw;
+    height: 35vh;
+    top: 165vh;
+  }
+  .theme_5 {
+    width: 60vw;
+    height: 35vh;
+    top: 220vh;
+  }
+  /* sec4 */
+  .hero_theme .hero_con {
+    height: 80vh;
+  }
+  /* 타이틀 영역 */
+  .hero_con .hero_title_wrap {
+    height: 15vh;
+  }
+  /* sec5 */
+  .slide_con .slide_list_con {
+    gap: 50px;
+    padding: 200px 0;
+  }
+  .slide_con .slide_list_wrap {
+    grid-template-columns: repeat(7, 380px);
+    grid-column-gap: 3rem;
+  }
+  .slide_list_wrap .list {
+    width: 45vw;
+  }
+  /* sec4,footer button */
+  .btn_inner .btn_inner_base {
+    transform: translateX(-25vw);
+  }
+  /* footer */
+  footer {
+    height: 100%;
+  }
+  .footer_con {
+    padding: 200px 36px 72px;
+  }
+  /* 푸터 텍스트 */
+  .footer_inner_wrap > h2 {
+    font-size: 22vw;
+    letter-spacing: 20px;
+  }
+  .footer_layout {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+  .two {
+    font-size: 1rem;
+  }
+}
+
+/* 모바일 큰사이즈 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* header */
+  nav {
+    height: 70px;
+  }
+  /* main */
+
+  .main_sec .con {
+    height: 60svh;
+  }
+  /* sec2 */
+  .theme_wrap {
+    height: 65vh;
+  }
+  .theme_wrap .con {
+    height: 65svh;
+    padding: 7rem 3rem;
+    box-sizing: border-box;
+    margin-bottom: 200px;
+  }
+  .left_text_wrap {
+    margin-bottom: 20px;
+  }
+  .left_text_wrap .left_title h3 {
+    font-size: 3vw;
+  }
+  .left_text_wrap .left_explane p {
+    font-size: 3vw;
+  }
+  .right_theme > .intro_text .intro_title {
+    font-size: 5.5vw;
+  }
+  /* sec3 */
+  .sticky_wrap {
+    height: 400vh;
+  }
+  .sticky_wrap .con {
+    height: 335vh;
+  }
+  .sticky_wrap .con .sticky_element {
+    top: 5vh;
+  }
+  /* 텍스트 영역 */
+  .sticky_element .sticky_text {
+    width: 80vw;
+    height: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .sticky_element .sticky_text h2 {
+    font-size: 1rem;
+  }
+  .sticky_element .sticky_text p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .sticky_element .sticky_shape {
+    width: 400px;
+    height: 400px;
+  }
+  /* 테마 크기 및 위치 설정 */
+  .theme_1,
+  .theme_2,
+  .theme_3,
+  .theme_4,
+  .theme_5 {
+    width: 90vw;
+    height: 35vh;
+  }
+
+  .theme_3 {
+    left: 5vw;
+  }
+  .theme_4 {
+    top: 165vh;
+  }
+  .theme_5 {
+    top: 220vh;
+  }
+  /* sec4 */
+  .hero_theme .hero_con {
+    height: 60vh;
+  }
+  /* 타이틀 영역 */
+  .hero_con .hero_title_wrap {
+    height: 10vh;
+  }
+  /* sec5 */
+  .slide_con .slide_list_con {
+    gap: 50px;
+    padding: 150px 0;
+    padding-bottom: 200px;
+  }
+  .slide_con .slide_list_wrap {
+    grid-template-columns: repeat(7, 300px);
+    grid-column-gap: 2rem;
+  }
+  .slide_list_wrap .list {
+    width: 60vw;
+  }
+  /* sec4,footer button */
+  .btn_inner .btn_inner_base {
+    transform: translateX(-40vw);
+  }
+  /* footer */
+  footer {
+    height: 100%;
+  }
+  .footer_con {
+    padding: 100px 36px 72px;
+  }
+  /* 푸터 텍스트 */
+  .footer_inner_wrap > h2 {
+    font-size: 20vw;
+    letter-spacing: 20px;
+  }
+  .footer_layout {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 120px;
+  }
+  .two {
+    font-size: 1rem;
+  }
+}
+
+/* 모바일 작은 사이즈 */
+@media screen and (max-width: 480px) {
+  /* header */
+  nav {
+    height: 70px;
+  }
+  /* main */
+
+  .main_sec .con {
+    height: 60svh;
+  }
+  /* sec2 */
+  .theme_wrap {
+    height: 65vh;
+  }
+  .theme_wrap .con {
+    height: 65svh;
+    padding: 7rem 3rem;
+    box-sizing: border-box;
+    margin-bottom: 200px;
+  }
+  .left_text_wrap {
+    margin-bottom: 20px;
+  }
+  .left_text_wrap .left_title h3 {
+    font-size: 2vw;
+  }
+  .left_text_wrap .left_explane p {
+    font-size: 2vw;
+  }
+  .right_theme > .intro_text .intro_title {
+    font-size: 5.5vw;
+  }
+  /* sec3 */
+  .sticky_wrap {
+    height: 400vh;
+  }
+  .sticky_wrap .con {
+    height: 345vh;
+  }
+  .sticky_wrap .con .sticky_element {
+    top: 5vh;
+  }
+  /* 텍스트 영역 */
+  .sticky_element .sticky_text {
+    width: 80vw;
+    height: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .sticky_element .sticky_text h2 {
+    font-size: 1rem;
+  }
+  .sticky_element .sticky_text p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .sticky_element .sticky_shape {
+    width: 300px;
+    height: 300px;
+  }
+  /* 테마 크기 및 위치 설정 */
+  .theme_1,
+  .theme_2,
+  .theme_3,
+  .theme_4,
+  .theme_5 {
+    width: 90vw;
+    height: 35vh;
+  }
+
+  .theme_3 {
+    left: 5vw;
+  }
+  .theme_4 {
+    top: 165vh;
+  }
+  .theme_5 {
+    top: 220vh;
+  }
+  /* sec4 */
+  .hero_theme .hero_con {
+    height: 60vh;
+  }
+  /* 타이틀 영역 */
+  .hero_con .hero_title_wrap {
+    height: 10vh;
+  }
+  /* sec5 */
+  .slide_con .slide_list_con {
+    gap: 50px;
+    padding: 150px 0;
+    padding-bottom: 200px;
+  }
+  .slide_con .slide_list_wrap {
+    grid-template-columns: repeat(7, 320px);
+    grid-column-gap: 1rem;
+  }
+  .slide_list_wrap .list {
+    width: 60vw;
+  }
+  /* sec4,footer button */
+  .btn_inner .btn_inner_base {
+    transform: translateX(-40vw);
+  }
+  /* footer */
+  footer {
+    height: 100%;
+  }
+  .footer_con {
+    padding: 100px 36px 72px;
+  }
+  /* 푸터 텍스트 */
+  .footer_inner_wrap > h2 {
+    font-size: 20vw;
+    letter-spacing: 20px;
+  }
+  .footer_layout {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 120px;
+  }
+  .two {
+    font-size: 1rem;
+  }
 }

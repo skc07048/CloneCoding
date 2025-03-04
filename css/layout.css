@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url("./reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .wrapper {
   width: 100%;
@@ -196,8 +196,8 @@ nav {
 }
 h1 .top,
 .bottom {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 10vw;
+  font-family: "Audiowide", sans-serif;
+  font-size: 6vw;
   line-height: 0.8;
   letter-spacing: 2px;
   color: var(--theme-text-color);
@@ -324,10 +324,10 @@ h1 .top,
 }
 .right_theme > .intro_text .intro_title {
   height: fit-content;
-  font-size: 100px;
+  font-size: 5vw;
   text-transform: capitalize;
   color: var(--theme-text-color);
-  font-family: "Alumni Sans", sans-serif;
+  font-family: "Audiowide", sans-serif;
 }
 .intro_title > span {
   opacity: 0;
@@ -336,7 +336,6 @@ h1 .top,
 .sticky_wrap {
   width: 100%;
   height: 450vh;
-
   box-sizing: border-box;
 }
 .sticky_wrap .con {
@@ -479,7 +478,7 @@ h1 .top,
   width: 95vw;
   height: 30vh;
   position: absolute;
-  bottom: 20vh;
+  bottom: 10vh;
   left: 2vw;
   display: flex;
   flex-direction: column;
@@ -499,11 +498,12 @@ h1 .top,
 .hero_text2 {
   width: fit-content;
   height: fit-content;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: "Audiowide", sans-serif;
   color: var(--theme-text-color);
-  font-size: 14vw;
+  font-size: 10vw;
   line-height: 0.8;
   text-transform: uppercase;
+  opacity: 0.8;
 }
 .hero_text .hero_text2 {
   margin-left: auto;
@@ -562,6 +562,7 @@ h1 .top,
 .slide_list_wrap .list {
   display: flex;
   gap: 20px;
+  transition: transform 0.8s ease-in-out;
 }
 
 .slide_list_wrap .list > .list_text {
@@ -712,7 +713,7 @@ footer {
 .footer_con {
   width: 100%;
   height: 100%;
-  padding: 120px 36px 72px;
+  padding: 280px 36px 72px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -729,11 +730,11 @@ footer {
 .footer_inner_wrap > h2 {
   width: fit-content;
   height: fit-content;
-  font-size: 36vw;
-  letter-spacing: 80px;
-  font-family: "Alumni Sans", sans-serif;
+  font-size: 18vw;
+  letter-spacing: 70px;
+  font-family: "Audiowide", sans-serif;
   color: var(--theme-text-color);
-  margin: 0 auto;
+  margin: 100px auto;
 }
 .footer_layout {
   width: 95%;
@@ -758,6 +759,10 @@ footer {
   height: 14px;
 }
 /* 버튼 영역 */
+.footer_btn {
+  width: fit-content;
+  height: fit-content;
+}
 .footer_btn button {
   width: 100%;
   height: 17px;
