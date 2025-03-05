@@ -375,15 +375,16 @@
     transform: translateX(50%);
   }
   .sticky_element .sticky_text h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .sticky_element .sticky_text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.4;
   }
   .sticky_element .sticky_shape {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    top: 30vh;
   }
   /* 테마 크기 및 위치 설정 */
   .theme_1,
@@ -423,11 +424,18 @@
     grid-column-gap: 1rem;
   }
   .slide_list_wrap .list {
-    width: 60vw;
+    width: 300px;
+  }
+  .bottom_wrap {
+    padding: 0 10px;
+  }
+  .bottom_wrap .left_btn {
+    display: flex;
+    gap: 2px;
   }
   /* sec4,footer button */
   .btn_inner .btn_inner_base {
-    transform: translateX(-40vw);
+    transform: translateX(-55vw);
   }
   /* footer */
   footer {
@@ -439,7 +447,7 @@
   /* 푸터 텍스트 */
   .footer_inner_wrap > h2 {
     font-size: 20vw;
-    letter-spacing: 20px;
+    letter-spacing: 8px;
   }
   .footer_layout {
     width: 100%;

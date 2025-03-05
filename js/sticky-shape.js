@@ -11,4 +11,9 @@ document.addEventListener("mousemove", (event) => {
   const moveY = (event.clientX - centerY) * 0.1;
 
   shape.style.transform = `translate(${moveX}px, ${moveY}px)`;
+
+  if (window.innerWidth <= 768) {
+    shape.style.transform = "translate(0,0)";
+    return;
+  }
 });

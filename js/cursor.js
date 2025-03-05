@@ -2,11 +2,12 @@
 const custom = document.querySelector(".cursor_move");
 
 const cursor = (e) => {
-  const mouseX = e.screenX;
-  const mouseY = e.screenY;
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
 
   custom.style.willChange = "transform";
-  custom.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  custom.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) scale3d(1,1,1)`;
+  custom.style.transformStyle = "preserve-3d";
 };
 
 window.addEventListener("mousemove", cursor);

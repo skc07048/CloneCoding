@@ -155,6 +155,7 @@ button {
   top: 0;
   left: 0;
 }
+
 canvas {
   position: absolute;
   top: 0;
@@ -180,6 +181,9 @@ body {
   cursor: none;
 }
 /* custom cursor */
+body:hover .cursor_wrap {
+  opacity: 1;
+}
 .cursor_wrap {
   width: 100%;
   height: 100vh;
@@ -193,13 +197,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 .cursor_move {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 .cursor {
   aspect-ratio: 1;
@@ -209,8 +212,8 @@ body {
   transition: all 0.4s;
   display: flex;
   position: relative;
-  left: -1.2rem;
-  top: -6.2rem;
+  left: 0;
+  top: 0;
 }
 .cursor_top {
   background-color: var(--theme-text-color);
@@ -263,8 +266,6 @@ body {
 /* cursor hover */
 .cursor.hover {
   width: 4rem;
-  left: -2rem;
-  top: -7rem;
 }
 .cursor_top.hover {
   height: 0.125rem;
